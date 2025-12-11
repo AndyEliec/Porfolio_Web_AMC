@@ -6,7 +6,7 @@ const projects: Project[] = [
   {
     id: '1',
     title: 'Consultor de Padrones (ARBA & AGIP)',
-    category: 'Automatización Fiscal & Data Managementón',
+    category: 'Automatización',
     description: 'Herramienta integral desarrollada en Excel para automatizar la búsqueda y cruce de alícuotas de Retenciones y Percepciones. Utiliza Power Query para modelar y conectar padrones mensuales de alto volumen (CABA y Bs. As.) y VBA para permitir consultas dinámicas por CUIT, reduciendo drásticamente el tiempo de validación fiscal.',
     technologies: ['Excel', 'VBA', 'PowerQuery','GitHub'],
     imageUrl: 'imagenes/Portada padrones.PNG', // corregir portada de control de padron perc y ret
@@ -15,7 +15,7 @@ const projects: Project[] = [
   {
     id: '2',
     title: 'Pagina Web Corporativa',
-    category: 'Desarrollo Web Frontend',
+    category: 'Desarrollo',
     description: 'Desarrollo en curso de un sitio web institucional moderno y escalable. Implementado con arquitectura basada en componentes (.tsx) para garantizar modularidad y reutilización de código. Utiliza TypeScript para el tipado estático robusto y JSON para la gestión dinámica de datos y configuraciones.',
     technologies: ['React', 'TypeScript', 'HTML5', 'JSON', 'IAStudio'],
     imageUrl: 'https://picsum.photos/id/445/600/400', // caratula pagina web
@@ -24,7 +24,7 @@ const projects: Project[] = [
   {
     id: '3',
     title: 'Extracto Bancario de PDF a EXCEL',
-    category: 'Automatización de Procesos (RPA) & ETL',
+    category: 'Automatización',
     description: 'Workflow automatizado en KNIME diseñado para extraer, limpiar y estructurar datos financieros desde archivos PDF no nativos. El proceso transforma datos desordenados en tablas de Excel listas para el análisis y la conciliación bancaria, eliminando la carga manual de datos.',
     technologies: ['KNIME', 'Excel'],
     imageUrl: 'https://lh3.googleusercontent.com/sitesv/AAzXCkdUR_Kmvfa9vAruZdoms8D6M5Rqi9bFw-ORs5P7skmhNKcyPuYdyBTVrCkDLPHnZyLJgFj3Cosi-4-xJsDaeU3tG7tOEo4L4HLMUe-GPNSFI3bWsiT1cBVj091ZmAJeemSLJwEPmnrU08WJG72jLcv_-hFWmpiQAaYL1XWPVho4BNA1chQd8hpGiERVIlRjt0wCo7xVp_FRDoNSYBXd2mIwfcbqqYK5r1o1HGg=w1280', 

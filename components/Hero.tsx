@@ -3,9 +3,9 @@ import { ArrowRight, FileSpreadsheet, Terminal } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
-  const scrollToPortfolio = (e: React.MouseEvent) => {
+  const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
     e.preventDefault();
-    const element = document.getElementById('portfolio');
+    const element = document.getElementById(sectionId);
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
@@ -53,12 +53,16 @@ const Hero: React.FC = () => {
           >
             <a 
               href="#portfolio" 
-              onClick={scrollToPortfolio}
+              onClick={(e) => scrollToSection(e, 'portfolio')}
               className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-medium hover:shadow-lg hover:shadow-cyan-500/30 transition-all flex items-center gap-2 cursor-pointer"
             >
               Ver Proyectos <ArrowRight size={18} />
             </a>
-            <a href="#contact" className="px-8 py-3 rounded-lg glass-panel text-slate-300 font-medium hover:bg-slate-800 transition-all border border-slate-700">
+            <a 
+              href="#contact" 
+              onClick={(e) => scrollToSection(e, 'contact')}
+              className="px-8 py-3 rounded-lg glass-panel text-slate-300 font-medium hover:bg-slate-800 transition-all border border-slate-700 cursor-pointer"
+            >
               Contactar
             </a>
           </motion.div>
