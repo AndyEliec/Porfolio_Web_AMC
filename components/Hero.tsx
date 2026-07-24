@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, FileSpreadsheet} from 'lucide-react';
+import { ArrowRight, FileSpreadsheet, Terminal } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
@@ -9,9 +9,7 @@ const Hero: React.FC = () => {
     if (element) {
       const headerOffset = 80;
       const elementPosition = element.getBoundingClientRect().top;
-      const scrollY = window.scrollY || window.pageYOffset || 0;
-      const offsetPosition = elementPosition + scrollY - headerOffset;
-
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
@@ -22,14 +20,13 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-[85vh] flex items-center justify-center relative overflow-hidden pt-28 pb-12">
       {/* Background Elements */}
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="w-full px-6 md:px-12 lg:px-20 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
         
-        {/* Columna Izquierda - Presentación */}
         <div className="space-y-6 md:space-y-8 lg:space-y-10 text-center md:text-left order-2 md:order-1">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -71,13 +68,13 @@ const Hero: React.FC = () => {
           </motion.div>
         </div>
 
-        {/* Columna Derecha - Card Terminal de Python */}
         <motion.div 
           className="relative order-1 md:order-2 flex justify-center md:block"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7 }}
         >
+          {/* Main Card */}
           <div className="relative z-10 glass-panel p-6 md:p-10 lg:p-12 rounded-2xl border border-slate-600/50 shadow-2xl transform rotate-3 md:hover:rotate-0 transition-transform duration-500 max-w-sm md:max-w-xl lg:max-w-2xl w-full">
             <div className="flex justify-between items-center mb-8 lg:mb-10">
               <div className="flex gap-2 lg:gap-3">
@@ -85,26 +82,27 @@ const Hero: React.FC = () => {
                 <div className="w-4 h-4 lg:w-5 lg:h-5 rounded-full bg-yellow-500"></div>
                 <div className="w-4 h-4 lg:w-5 lg:h-5 rounded-full bg-green-500"></div>
               </div>
-              <div className="text-sm lg:text-base text-slate-500 font-mono">analysis_tool.py</div>
+              <div className="text-sm lg:text-base text-slate-500 font-mono">analysis_tool.js</div>
             </div>
             <div className="space-y-4 lg:space-y-6 font-mono text-base md:text-lg lg:text-xl">
-              <div className="text-pink-400">import <span className="text-white">pandas</span> as <span className="text-white">pd</span></div>
-              <div className="text-pink-400">import <span className="text-white">finance_tools</span></div>
+              <div className="text-pink-400">import <span className="text-white">&#123; analyzeData &#125;</span> from <span className="text-emerald-400">'./finance.js'</span>;</div>
+              <div className="text-pink-400">import <span className="text-emerald-400">'./styles.css'</span>;</div>
               <br />
-              <div className="text-slate-400"># Optimizando flujo de caja</div>
+              <div className="text-slate-400">// Optimizando flujo de caja con HTML, CSS & JavaScript</div>
               <div>
-                <span className="text-purple-400">def</span> <span className="text-blue-400">optimize_process</span>(data):
+                <span className="text-purple-400">function</span> <span className="text-blue-400">optimizeProcess</span>(data) &#123;
               </div>
               <div className="pl-6 lg:pl-10">
-                <span className="text-slate-300">analysis</span> = data.<span className="text-yellow-400">analyze_trends</span>()
+                <span className="text-purple-400">const</span> <span className="text-slate-300">analysis</span> = <span className="text-yellow-400">analyzeData</span>(data);
               </div>
               <div className="pl-6 lg:pl-10">
-                <span className="text-purple-400">return</span> analysis.<span className="text-yellow-400">maximize_efficiency</span>()
+                <span className="text-purple-400">return</span> analysis.<span className="text-yellow-400">maximizeEfficiency</span>();
               </div>
+              <div>&#125;</div>
             </div>
           </div>
 
-          {/* Badge Flotante */}
+          {/* Floating Badge */}
           <div className="absolute -bottom-8 -left-8 lg:-bottom-12 lg:-left-12 glass-panel p-6 md:p-8 lg:p-10 rounded-2xl border border-slate-600/50 shadow-xl transform -rotate-6 z-0 w-64 md:w-80 lg:w-96 hidden sm:block">
             <div className="flex items-center gap-4 lg:gap-6 mb-4 lg:mb-6">
               <div className="p-3 lg:p-4 bg-green-500/20 rounded-lg text-green-400">

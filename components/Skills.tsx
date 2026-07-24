@@ -20,8 +20,9 @@ const skillCategories = {
     icon: <Terminal />,
     color: "cyan",
     items: [
-      { name: "Python Analytics", level: 85, desc: "Pandas, NumPy" },
-      { name: "SQL & Bases de Datos", level: 75, desc: "Consultas complejas, Modelado ER" },
+      { name: "HTML5, CSS3 & JavaScript", level: 95, desc: "Desarrollo Web Frontend, Manipulación de DOM, Layouts Flex/Grid, Experiencias Interactivas" },
+      { name: "Python Analytics & Scripting", level: 85, desc: "Pandas, NumPy, Automatización de Scripts" },
+      { name: "SQL & Bases de Datos", level: 80, desc: "Consultas complejas, Modelado ER" },
       { name: "Business Intelligence", level: 92, desc: "Power BI, DAX, Tableau, Looker" }
     ]
   },

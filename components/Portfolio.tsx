@@ -20,7 +20,7 @@ const projects: Project[] = [
     title: 'Pagina Web Corporativa',
     category: 'Desarrollo',
     description: 'Gestor e integrador de páginas web corporativas desarrolladas. Permite previsualizar sitios institucionales adaptables en vista multidispositivo (Desktop, Tablet, Móvil) e integrar/cargar nuevos proyectos web personalizados.',
-    technologies: ['React', 'TypeScript', 'HTML5', 'JSON'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     imageUrl: 'https://raw.githubusercontent.com/AndyEliec/hello-world/refs/heads/main/imagen/CapatulaPaginaWeb.JPG', 
     link: 'https://ai.studio/apps/drive/1ThVCP4tg70aVW9SF5yZODPtmudY25Q9U',
     actionType: 'corporate_web'
@@ -30,7 +30,7 @@ const projects: Project[] = [
     title: 'Agenda Impositiva & Alertas Telegram',
     category: 'Automatización',
     description: 'Sistema automatizado de agenda de vencimientos impositivos (AFIP, ARBA, AGIP, Convenio Multilateral). Incluye calendario inteligente por terminación de CUIT y Bot de Telegram integrado para notificaciones automáticas previas.',
-    technologies: ['GoogleSheet', 'TypeScript','Telegram API', 'Automation'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Telegram API'],
     imageUrl: 'https://raw.githubusercontent.com/AndyEliec/Agenda_Impositiva/refs/heads/main/Agenda%20Impositiva/Image/Captura%20de%20pantalla%202026-07-24%20141729.png',
     link: 'https://script.google.com/macros/s/AKfycbzHZKVFwnq1ofwe_p1id9lHQAxZu3Bs11PvjmVYYT4gAaOpeBGBIFiVlto3F4qQh6E/exec',
     actionType: 'external'

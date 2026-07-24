@@ -19,7 +19,7 @@ const DEFAULT_PAGES: CorporatePage[] = [
     url: 'https://estudiocorimayo-demo.web.app',
     description: 'Sitio web institucional de alta conversión con catálogo de servicios impositivos, cotizador dinámico de honorarios y canal directo de consultas.',
     status: 'Publicado',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Formspree'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
     imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
     createdAt: '2026-03-15'
   },
@@ -31,7 +31,7 @@ const DEFAULT_PAGES: CorporatePage[] = [
     url: 'https://process-tech-demo.web.app',
     description: 'Landing page para firma de consultoría tecnológica especializada en automatización con Python, KNIME y VBA para departamentos contables.',
     status: 'Demo Interactivo',
-    technologies: ['React 19', 'Tailwind', 'Lucide Icons', 'Framer Motion'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
     imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800',
     createdAt: '2026-05-10'
   },
@@ -43,7 +43,7 @@ const DEFAULT_PAGES: CorporatePage[] = [
     url: 'https://servicios-fiscales.com.ar',
     description: 'Plataforma corporativa web con panel de acceso a documentación fiscal, entrega de VEPs y calendario de vencimientos integrados.',
     status: 'En Desarrollo',
-    technologies: ['TypeScript', 'Next.js', 'Tailwind', 'REST APIs'],
+    technologies: ['HTML5', 'CSS3', 'JavaScript'],
     imageUrl: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800',
     createdAt: '2026-06-01'
   }
