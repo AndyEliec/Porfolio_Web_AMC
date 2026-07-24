@@ -43,7 +43,7 @@ const NavBar: React.FC = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'glass-panel shadow-lg py-2' : 'bg-slate-900/90 backdrop-blur-md py-4'}`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-6 md:px-12 lg:px-20">
         <div className="flex justify-between items-center">
           <div 
             className="flex-shrink-0 flex items-center cursor-pointer group" 

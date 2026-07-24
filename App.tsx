@@ -6,7 +6,6 @@ import Skills from './components/Skills';
 import Methodology from './components/Methodology';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import AIChat from './components/AIChat';
 
 function App() {
   return (
@@ -20,11 +19,6 @@ function App() {
         <Portfolio />
         <Contact />
       </main>
-      {/* 
-        The AIChat component is included to demonstrate "programming knowledge" 
-        by integrating a real AI API into the portfolio itself.
-      */}
-      <AIChat />
     </div>
   );
 }

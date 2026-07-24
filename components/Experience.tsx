@@ -49,8 +49,8 @@ const experiences: ExperienceItem[] = [
       'Liquidación de IIBB e IVA',
       'Líder de grupos de trabajo por sistema de Practicante'
     ]
-  }
-    {
+  },
+  {
     id: '4',
     role: 'Administrativa Contable',
     company: 'JCF Consultores',
@@ -67,8 +67,8 @@ const experiences: ExperienceItem[] = [
       'Liquidación de IIBB e IVA',
       'Manejo de grupos de trabajo'
     ]
-  }
-    {
+  },
+  {
     id: '5',
     role: 'Promotor del Conocimiento',
     company: 'BA Multiplica',
@@ -80,8 +80,8 @@ const experiences: ExperienceItem[] = [
       'Sensibilización en Temáticas Sociales y Ambientales: Educación sobre igualdad de género, consumo responsable y sustentabilidad',
       'Diseño de Material Didáctico: Elaboración de recursos educativos y ejercicios prácticos, para facilitar el aprendizaje y asegurar la adquisición de habilidades clave'
     ]
-  }
-    {
+  },
+  {
     id: '6',
     role: 'Reclutamiento de Talento Humano',
     company: 'AIESEC',
@@ -98,40 +98,44 @@ const experiences: ExperienceItem[] = [
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="py-20 bg-slate-900/50">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Trayectoria Profesional</h2>
-          <p className="text-slate-400 max-w-2xl mx-auto">
+    <section id="experience" className="py-20 md:py-32 bg-slate-900/50">
+      <div className="w-full px-6 md:px-12 lg:px-20">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Trayectoria Profesional</h2>
+          <p className="text-slate-400 text-lg md:text-xl max-w-4xl mx-auto">
             Una evolución constante desde los fundamentos contables hacia la innovación tecnológica.
           </p>
         </div>
 
-        <div className="relative border-l border-slate-700 ml-4 md:ml-8 space-y-12">
+        {/* 
+           - Removed 'max-w-5xl' to allow full width 
+           - Adjusted margin-left (ml) logic to maintain layout integrity without centering (mx-auto removed)
+        */}
+        <div className="relative border-l-2 border-slate-700 ml-4 md:ml-8 lg:ml-20 space-y-16">
           {experiences.map((exp, index) => (
             <motion.div 
               key={exp.id} 
-              className="relative pl-8 md:pl-12"
+              className="relative pl-8 md:pl-16 pr-4 md:pr-10"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2 }}
             >
               {/* Dot */}
-              <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-cyan-500 ring-4 ring-slate-900" />
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-cyan-500 ring-4 ring-slate-900" />
               
-              <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 mb-2">
-                <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                <span className="text-cyan-400 font-mono text-sm">{exp.company}</span>
-                <span className="text-slate-500 text-sm md:ml-auto">{exp.period}</span>
+              <div className="flex flex-col md:flex-row md:items-baseline gap-2 md:gap-8 mb-4">
+                <h3 className="text-2xl font-bold text-white">{exp.role}</h3>
+                <span className="text-cyan-400 font-mono text-lg font-medium">{exp.company}</span>
+                <span className="text-slate-500 text-base md:ml-auto font-medium">{exp.period}</span>
               </div>
               
-              <p className="text-slate-300 mb-4">{exp.description}</p>
+              <p className="text-slate-300 mb-6 text-lg max-w-7xl">{exp.description}</p>
               
-              <ul className="space-y-2">
+              <ul className="space-y-3 max-w-7xl">
                 {exp.achievements.map((achievement, i) => (
-                  <li key={i} className="flex items-start text-slate-400 text-sm">
-                    <span className="mr-2 text-cyan-500 mt-1">▹</span>
+                  <li key={i} className="flex items-start text-slate-400 text-base md:text-lg">
+                    <span className="mr-3 text-cyan-500 mt-1.5 text-sm">▹</span>
                     {achievement}
                   </li>
                 ))}
